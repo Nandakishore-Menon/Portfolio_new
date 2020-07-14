@@ -19,7 +19,7 @@ var right=function(){
     $("#about").click(function(){
 
     $(".blue-box").animate({right: '+=50%',
-        opacity: "0.9"
+        opacity: "0.99"
     });
     left();
     $(".blue-box").animate({opacity:"1"});
@@ -33,7 +33,7 @@ var left=function(){
     $("#back").click(function(){
 
         $(".blue-box").animate({right: '-=50%',
-            opacity: "0.9"
+            opacity: "0.99"
         });
         right();
         $(".blue-box").animate({opacity:"1"});
