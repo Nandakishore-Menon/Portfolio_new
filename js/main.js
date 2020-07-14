@@ -1,51 +1,24 @@
-
-var signUpButton = document.getElementById('Add');
-const signInButton = document.getElementById('GoBack');
-const container = document.getElementById('container');
-var lr;
-
-function queryfunc(x) {
-  if (x.matches) { 
-        lr=document.getElementsByClassName('left')[0];
-        var signUpButton=document.getElementById('Addid');
-        console.log(lr);
-        console.log(signUpButton);
-        signUpButton.addEventListener('click', () => {
-
-});
-  } 
-  else {
-        lr=document.getElementsByClassName('right')[0];
-        var signUpButton = document.getElementById('Add');
-        signUpButton.addEventListener('click', () => {
-    container.classList.add("right-panel-active");
-    //console.log(lr);
-
-});
-
-  }
-}
-var x = window.matchMedia("(max-width: 767px)");
-
-if(x.matches){
-    queryfunc(x);
-}
-else{
-    queryfunc(x);
-}
-x.addListener(queryfunc);
+var left=function(){
+    $(".blue-box").html(`<button id="back" class="ghost">Back</button>`);
+};
 
 
+$("#about").click(function(){
+    // $(".blue-box").html(`<button id="Back" class="ghost">Back</button>`);
+    // $(".blue-box").animate({right:'20%',opacity:'0.6'});
+    $(".blue-box").animate({right: '50%',
+        opacity: "0.5"
+    },left);
+    $(".blue-box").animate({opacity:"1"});
 
-signInButton.addEventListener('click', () => {
-    container.classList.remove("right-panel-active");
-    document.getElementsByClassName('left')[0].innerHTML=`                <div class="profile">
-                    <img src="./img/me.jpeg" height="150px"id="me" alt="Avatar">
-                </div>
-                <div class="bio text-center">
-                    <h2>Hey! I am Nandakishore S Menon.</h2>Software developer<br>Computer Science undergrad student at IIIT Bangalore.
-                </div>`;
+}); 
+$("#back").click(function(){
+    // $(".blue-box").html(`<button id="Back" class="ghost">Back</button>`);
+    // $(".blue-box").animate({right:'20%',opacity:'0.6'});
+    $(".blue-box").animate({right: '50%',
+        opacity: "0.5"
+    },left);
+    $(".blue-box").animate({opacity:"1"});
 
-});
-
+}); 
 
