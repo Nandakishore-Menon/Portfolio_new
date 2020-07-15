@@ -127,7 +127,7 @@ li>h3{
     color: #104a6f;
     font-weight: 600;
     font-size: 1.6vw;
-    height:50%;
+    height:40%;
 }
 
 
@@ -239,4 +239,7 @@ li>h3{
     position: relative;
     bottom: 0px;
     margin-top:1%; 
+}
+#contact{
+    margin: 10% 0%;
 }

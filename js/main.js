@@ -71,6 +71,26 @@ var interest=`<div id="interest"><ul>
     <li><h3>I am also a tech enthusiast(more like junkie)</h3></li>
 </ul></div>`;
 
+var cont_info=`<div><h2>Send me your message,here </h2><span><br>OR THROUGH<br><span><button id="back" class="ghost">Back</button></div>`;
+
+var cont_form=`<form
+  action="https://formspree.io/xpzyorad"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>`;
+
 
 
 
@@ -93,6 +113,7 @@ var right=function(){
         project();
         $(".blue-box").animate({opacity:"1"});
     });
+
 };
 
 var left=function(){
@@ -135,5 +156,28 @@ var project=function(){
  
 right();
 
+$("#contact").click(function(){
 
+        $(".blue-box").animate({right: '+=50%',
+        opacity: "0.99"
+        },800);
+        contact();
+        $(".blue-box").animate({opacity:"1"});
+        //$(".blue-box").html(l_content);
+    });
 
+var contact=function(){
+    $(".right").html(cont_form);
+    //$(".blue-box").html();
+    $(".blue-box").html(cont_info);
+    $("#back").click(function(){
+
+        $(".blue-box").animate({right: '-=50%',
+            opacity: "0.99"
+        },800);
+        $(".blue-box").animate({opacity:"1"});
+        $(".right").html("");
+        //$(".blue-box").html(r_content);
+        right();
+    });
+};
