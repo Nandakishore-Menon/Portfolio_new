@@ -21,7 +21,7 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
     <div class="carousel-item">
       
       <div  class="car-img d-block w-100">
-        <img src="img/stu.png" alt="First slide">
+        <img src="..img/stu.png" alt="First slide">
       </div>
       <div class="d-none carousel-caption">
         <h1>Student Database Management System</h1>
@@ -37,7 +37,7 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
     </div>
     <div class="carousel-item  active">
         <div  class="car-img d-block active w-100">
-            <img src="img/quiz.png" alt="First slide">
+            <img src="..img/quiz.png" alt="First slide">
         </div>
         <div class="d-none carousel-caption">
             <h1>Socket Programming Quiz</h1>
@@ -49,7 +49,7 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
     </div>
     <div class="carousel-item">
         <div  class="car-img d-block active w-100">
-            <img src="img/slide.png" alt="First slide">
+            <img src="..img/slide.png" alt="First slide">
         </div>
         <div class="d-none carousel-caption">
             <h1>Sliding puzzle</h1>
