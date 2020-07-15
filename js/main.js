@@ -18,6 +18,7 @@ var r_content=`                <div class="tech ">
 
 var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
+  <a href="">
     <div class="carousel-item">
       
       <div  class="car-img d-block w-100">
@@ -34,7 +35,8 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
         </div>
 
       </div>
-    </div>
+    </div><a>
+    <a href="">
     <div class="carousel-item  active">
         <div  class="car-img d-block active w-100">
             <img src="img/quiz.png" alt="First slide">
@@ -46,7 +48,8 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
                 <i class="devicon-python-plain techu"></i>
             </div>
         </div>
-    </div>
+    </div></a>
+    <a href="">
     <div class="carousel-item">
         <div  class="car-img d-block active w-100">
             <img src="img/slide.png" alt="First slide">
@@ -59,6 +62,7 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
             </div>
         </div>
     </div>
+    </a>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -81,7 +85,7 @@ var caro_info=`<div class="projinfo text-center">
                     <h1>Socket Programming Quiz</h1>
             <p>A multiplayer trivia game.Answer within 10 seconds, or the question is skipped.Implemented in python.</p>
             <div class="techused"><h3>Technologies used:</h3>
-                <i class="devicon-python-plain techic"></i>
+                <i class="devicon-python-plain techu"></i>
             </div>
                 </div>`;
 
