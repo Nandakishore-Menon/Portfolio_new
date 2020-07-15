@@ -57,6 +57,12 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
   </a>
 </div>`;
 
+var social=`<div class="tech social">
+    <a href="https://www.linkedin.com/in/nandakishore-menon-b4a021196/" target="_blank"><i class="devicon-linkedin-plain techic"></i></a>
+    <a href="https://github.com/Nandakishore-Menon" target="_blank"><i class="devicon-github-plain techic"></i></a>
+    <a href=""><i class="devicon-facebook-plain techic"></i></a>
+    <a href="https://twitter.com/Nandakishore_SM"  target="_blank"><i class="devicon-twitter-plain techic"></i></a>
+</div>`;
 
 var caro_info=`<div class="projinfo text-center">            
                     <h1>Socket Programming Quiz</h1>
@@ -71,24 +77,21 @@ var interest=`<div id="interest"><ul>
     <li><h3>I am also a tech enthusiast(more like junkie)</h3></li>
 </ul></div>`;
 
-var cont_info=`<div><h2>Send me your message,here </h2><span><br>OR THROUGH<br><span><button id="back" class="ghost">Back</button></div>`;
+var cont_info=`<div id="cont_info"><h2>Send me your message,here </h2><span><br>OR THROUGH<br><span>
+${social}<span><br>OR mail me at<br><span><h3>Nandakishore.Menon@iiitb.org</h3>
+<button id="back" class="ghost">Back</button></div>`;
 
-var cont_form=`<form
-  action="https://formspree.io/xpzyorad"
-  method="POST"
->
+var cont_form=`<form id="cont_form" action="https://formspree.io/xpzyorad" method="POST">
   <label>
-    Your email:
-    <input type="text" name="_replyto">
+    Your email:<br><input type="email" name="_replyto">
   </label>
   <label>
-    Your message:
-    <textarea name="message"></textarea>
+    Your message:<br><textarea name="message"></textarea>
   </label>
 
   <!-- your other form fields go here -->
-
-  <button type="submit">Send</button>
+  <br>
+  <button id="sub" type="submit">Send</button>
 </form>`;
 
 

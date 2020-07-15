@@ -45,6 +45,21 @@ button:focus {
 li>h3{
     font-size: 2.5vw;
 }
+input textarea{
+    width: 50%;
+}
+a:link {
+  text-decoration: none;
+}
+label{
+    position: relative;
+    float: left;
+    clear: both;
+    left: 30%;
+    /*top:15vw;*/
+    text-align: center;
+}
+
 .navbar{
     width: 50%;
 }
@@ -145,9 +160,15 @@ li>h3{
     font-size: 4vw;
 }
 .techic{
+    text-decoration: none;
     font-size: 4vw;
     margin: 0.5em;
+    color:#ffffff;
 
+}
+.techic:hover{
+    text-decoration: none;
+    color:#f0cdce; 
 }
 .interest{
     width: 50%;
@@ -235,10 +256,27 @@ li>h3{
     top: 5%;
 }
 
-#back{
+/*#back{
     position: relative;
     bottom: 0px;
     margin-top:1%; 
+}*/
+#cont_info{
+    margin: 10% 0%;
+    height: 60%;
+}
+
+#cont_form{
+    position: relative;
+    top:20%;
+    height: 50%;
+}
+
+#sub{
+    position: relative;
+    float: left;
+    clear: both;
+    left: 40%;
 }
 #contact{
     margin: 10% 0%;
