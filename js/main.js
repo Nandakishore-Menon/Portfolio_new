@@ -26,6 +26,13 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
       <div class="d-none carousel-caption">
         <h1>Student Database Management System</h1>
         <p>Uses a REST API to take user info and stores in database, which can later be viewed, searched, updated and deleted.</p>
+        <div class="techused"><h3>Technologies used:</h3>
+            <i class="devicon-mongodb-plain techu"></i>
+            <i class="devicon-nodejs-plain techu"></i>
+            <i class="devicon-express-original techu"></i>
+            <i class="devicon-javascript-plain techu"></i>
+        </div>
+
       </div>
     </div>
     <div class="carousel-item  active">
@@ -35,6 +42,9 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
         <div class="d-none carousel-caption">
             <h1>Socket Programming Quiz</h1>
             <p>A multiplayer trivia game.Answer within 10 seconds, or the question is skipped.Implemented in python.</p>
+            <div class="techused"><h3>Technologies used:</h3>
+                <i class="devicon-python-plain techu"></i>
+            </div>
         </div>
     </div>
     <div class="carousel-item">
@@ -44,6 +54,9 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
         <div class="d-none carousel-caption">
             <h1>Sliding puzzle</h1>
             <p>Solves the sliding puzzle in minimum moves and also allows user to play.Implemented in python.</p>
+            <div class="techused"><h3>Technologies used:</h3>
+                <i class="devicon-python-plain techu"></i>
+            </div>
         </div>
     </div>
   </div>
@@ -67,6 +80,9 @@ var social=`<div class="tech social">
 var caro_info=`<div class="projinfo text-center">            
                     <h1>Socket Programming Quiz</h1>
             <p>A multiplayer trivia game.Answer within 10 seconds, or the question is skipped.Implemented in python.</p>
+            <div class="techused"><h3>Technologies used:</h3>
+                <i class="devicon-python-plain techic"></i>
+            </div>
                 </div>`;
 
 
@@ -78,10 +94,10 @@ var interest=`<div id="interest"><ul>
 </ul></div>`;
 
 var cont_info=`<div id="cont_info"><h2>Send me your message,here </h2><span><br>OR THROUGH<br><span>
-${social}<span><br>OR mail me at<br><span><h3>Nandakishore.Menon@iiitb.org</h3>
+${social}<span><br>OR mail me at<br><span><h3 id="mail">Nandakishore.Menon@iiitb.org</h3>
 <button id="back" class="ghost">Back</button></div>`;
 
-var cont_form=`<form id="cont_form" action="https://formspree.io/xpzyorad" method="POST">
+var cont_form=`<div id="form_div"><form id="cont_form" action="https://formspree.io/xpzyorad" method="POST">
   <label>
     Your email:<br><input type="email" name="_replyto">
   </label>
@@ -92,7 +108,7 @@ var cont_form=`<form id="cont_form" action="https://formspree.io/xpzyorad" metho
   <!-- your other form fields go here -->
   <br>
   <button id="sub" type="submit">Send</button>
-</form>`;
+</form></div>`;
 
 
 
@@ -140,7 +156,7 @@ var project=function(){
     $(".blue-box").html(caro_info);
     $(".blue-box").append(l_content);
     $('.carousel').carousel({
-        interval: 6000
+        interval: 4000
     });
     $('.carousel').on('slid.bs.carousel', function () {
         $('.projinfo').html($('.active > .carousel-caption').html());

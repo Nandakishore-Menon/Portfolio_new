@@ -21,6 +21,7 @@ h1 {
     font-weight: bold;
     margin: 0;
 }
+
 button {
     border-radius: 20px;
     border: 1px solid #104a6f;
@@ -207,8 +208,8 @@ label{
     padding: 0px;
 } 
 .car-img>img{
-    height:80%;
-    width:70%;
+    height:25vw;
+    width:25vw;
     position: relative;
     top:10%;
     left:15%;
@@ -218,6 +219,14 @@ label{
     /*width:90%;*/
     margin: 10% 0px;
     font-size: 1.6vw;
+}
+.techu{
+    font-size: 4vw;
+    padding:5px 10px;
+}
+.techused>h3{
+    font-size: 2vw;
+    font-weight: bold;
 }
 
 #project{
@@ -263,13 +272,14 @@ label{
 }*/
 #cont_info{
     margin: 10% 0%;
-    height: 60%;
+    height: 40%;
+}
+#cont_info>h2{
+    font-size: 2.8vw;
 }
 
 #cont_form{
-    position: relative;
-    top:20%;
-    height: 50%;
+    font-size: 1.5vw;
 }
 
 #sub{
@@ -280,4 +290,12 @@ label{
 }
 #contact{
     margin: 10% 0%;
+}
+#mail{
+    font-size: 2vw;
+}
+#form_div{
+    height:60%;
+    width:100%;
+    margin-top:20%;
 }
