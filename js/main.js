@@ -18,12 +18,12 @@ var r_content=`                <div class="tech ">
 
 var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-  <a href="">
+  
     <div class="carousel-item">
-      
+      <a href="https://github.com/Nandakishore-Menon/Student_Database_Management" target="_blank">
       <div  class="car-img d-block w-100">
         <img src="img/stu.png" alt="First slide">
-      </div>
+      </div></a>
       <div class="d-none carousel-caption">
         <h1>Student Database Management System</h1>
         <p>Uses a REST API to take user info and stores in database, which can later be viewed, searched, updated and deleted.</p>
@@ -33,14 +33,15 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
             <i class="devicon-express-original techu"></i>
             <i class="devicon-javascript-plain techu"></i>
         </div>
-
       </div>
-    </div><a>
-    <a href="">
+      
+    </div>
+    
     <div class="carousel-item  active">
+    <a href="https://github.com/Nandakishore-Menon/Socket_quiz_python" target="_blank">
         <div  class="car-img d-block active w-100">
             <img src="img/quiz.png" alt="First slide">
-        </div>
+        </div></a>
         <div class="d-none carousel-caption">
             <h1>Socket Programming Quiz</h1>
             <p>A multiplayer trivia game.Answer within 10 seconds, or the question is skipped.Implemented in python.</p>
@@ -48,12 +49,14 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
                 <i class="devicon-python-plain techu"></i>
             </div>
         </div>
-    </div></a>
-    <a href="">
+    
+    </div>
+    
     <div class="carousel-item">
+    <a href="https://github.com/Nandakishore-Menon/Sliding_puzzle" target="_blank">
         <div  class="car-img d-block active w-100">
             <img src="img/slide.png" alt="First slide">
-        </div>
+        </div></a>
         <div class="d-none carousel-caption">
             <h1>Sliding puzzle</h1>
             <p>Solves the sliding puzzle in minimum moves and also allows user to play.Implemented in python.</p>
@@ -61,8 +64,9 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
                 <i class="devicon-python-plain techu"></i>
             </div>
         </div>
+    
     </div>
-    </a>
+    
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
