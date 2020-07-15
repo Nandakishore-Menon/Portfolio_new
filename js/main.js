@@ -18,14 +18,33 @@ var r_content=`                <div class="tech ">
 
 var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="..." alt="First slide">
+    <div class="carousel-item">
+      
+      <div  class="car-img d-block w-100">
+        <img src="img/me.jpeg" alt="First slide">
+      </div>
+      <div class="d-none carousel-caption">
+        <h1>Sliding puzzle</h1>
+        <p>Solves the sliding puzzle in minimum moves and also allows user to play.Implemented in python.</p>
+      </div>
+    </div>
+    <div class="carousel-item  active">
+        <div  class="car-img d-block active w-100">
+            <img src="img/quiz.png" alt="First slide">
+        </div>
+        <div class="d-none carousel-caption">
+            <h1>Socket Programming Quiz</h1>
+            <p>A multiplayer trivia game.Answer within 10 seconds, or the question is skipped.Implemented in python.</p>
+        </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="..." alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="..." alt="Third slide">
+        <div  class="car-img d-block active w-100">
+            <img src="img/slide.png" alt="First slide">
+        </div>
+        <div class="d-none carousel-caption">
+            <h1>Sliding puzzle</h1>
+            <p>Solves the sliding puzzle in minimum moves and also allows user to play.Implemented in python.</p>
+        </div>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -37,6 +56,15 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
     <span class="sr-only">Next</span>
   </a>
 </div>`;
+
+
+var caro_info=`<div class="projinfo text-center">            
+                    <h1>Socket Programming Quiz</h1>
+            <p>A multiplayer trivia game.Answer within 10 seconds, or the question is skipped.Implemented in python.</p>
+                </div>`;
+
+
+
 
 var right=function(){
     $(".blue-box").html(r_content);
@@ -74,7 +102,14 @@ var left=function(){
 
 var project=function(){
     $(".right").html(projs);
-    $(".blue-box").html(l_content);
+    $(".blue-box").html(caro_info);
+    $(".blue-box").append(l_content);
+    $('.carousel').carousel({
+        interval: 6000
+    });
+    $('.carousel').on('slid.bs.carousel', function () {
+        $('.projinfo').html($('.active > .carousel-caption').html());
+    });
     $("#back").click(function(){
 
         $(".blue-box").animate({right: '-=50%',
