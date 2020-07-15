@@ -46,8 +46,12 @@ button:focus {
 li>h3{
     font-size: 2.5vw;
 }
-input textarea{
+input{
     width: 50%;
+}
+textarea{
+    width: 50%;
+
 }
 a:link {
   text-decoration: none;
@@ -56,7 +60,7 @@ label{
     position: relative;
     float: left;
     clear: both;
-    left: 30%;
+    width: 100%;
     /*top:15vw;*/
     text-align: center;
 }
@@ -165,10 +169,10 @@ label{
     font-size: 4vw;
     margin: 0.5em;
     color:#ffffff;
-
+    transition: font-size 0.5s;
 }
 .techic:hover{
-    text-decoration: none;
+    font-size: 5.2vw;
     color:#f0cdce; 
 }
 .interest{
