@@ -29,7 +29,7 @@ button {
     font-size: 12px;
     font-weight: bold;
     margin:5px 0px;
-    padding: 1vw 2.2vw;
+    padding: 0.6vw 2.2vw;
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: transform 80ms ease-in;
@@ -42,7 +42,9 @@ button:active {
 button:focus {
     outline: none;
 }
-
+li>h3{
+    font-size: 2.5vw;
+}
 .navbar{
     width: 50%;
 }
@@ -71,6 +73,7 @@ button:focus {
     width: 80%;
     padding: 0px 0px;
     position: relative;
+    top:8%;
 }
 .left{
     border-radius: 10px 0px 0px 10px;
@@ -153,7 +156,9 @@ button:focus {
     float:left;
     clear: both;
     margin: 10% 0px;
-    width:100%;
+    width:50%;
+    position: relative;
+    left: 30%;
 }
 .navbar-toggler{
     position:relative;
@@ -197,18 +202,41 @@ button:focus {
 #project{
     float:left;
     clear:both;
-    position: relative;
-    left:33%;
+
+    font-size: 1.3vw;
 }
  #about{
     float:left;
     clear:both;
-    position: relative;
-    left:29%;
+    margin-left: 1.2vw;
+    font-size: 1.3vw;
 }
 
 #me{
     border-radius: 50%;
     height: 100%;
     
+}
+#exp{
+
+    position: relative;
+    top:20%;
+    height:30%;
+    margin: 10% 1% 20% 1%;
+    padding: 10px;
+
+}
+#exp>h2{
+    font-size: 3vw;
+}
+
+#interest{
+    position: relative;
+    top: 5%;
+}
+
+#back{
+    position: relative;
+    bottom: 0px;
+    margin-top:1%; 
 }

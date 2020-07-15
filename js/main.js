@@ -13,7 +13,7 @@ var r_content=`                <div class="tech ">
                 </div>
                 <div class="but">
                 <button id="project" class="ghost">My Projects</button>
-                <button id="about" class="ghost">More about me?</button>
+                <button id="about" class="ghost">About me</button>
                 </div>`;
 
 var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -64,6 +64,15 @@ var caro_info=`<div class="projinfo text-center">
                 </div>`;
 
 
+var exp=`<div id="exp"><h2>Currently seeking intership opportunities.</h2><button id="back" class="ghost">Back</button></div>`;
+var interest=`<div id="interest"><ul>
+    <li><h3>I am passionate about problem solving in general, be it a development challenge or competitive programming questions.</h3></li><br>
+    <li><h3>I enjoy CTFs and Hackathons</h3></li><br>
+    <li><h3>I am also a tech enthusiast(more like junkie)</h3></li>
+</ul></div>`;
+
+
+
 
 
 var right=function(){
@@ -87,8 +96,10 @@ var right=function(){
 };
 
 var left=function(){
-    $(".blue-box").html(l_content);
-
+    $(".blue-box").html(exp);
+    // $(".blue-box").append(l_content);
+    $(".right").html(interest);
+    
     $("#back").click(function(){
 
         $(".blue-box").animate({right: '-=50%',
@@ -117,6 +128,7 @@ var project=function(){
         },800);
         right();
         $(".blue-box").animate({opacity:"1"});
+        $(".right").html("");
 
     });
 };
