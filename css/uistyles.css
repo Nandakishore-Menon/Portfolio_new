@@ -66,14 +66,6 @@ label{
     text-align: center;
 }
 
-.navbar{
-    width: 50%;
-}
-.nav-item{
-    font-size: 25px;
-    font-weight: bold;
-    margin: 0px 20%;
-}
 
 
 .ghost {
@@ -83,7 +75,6 @@ label{
 }
 
 
-
 .main {
 
     background-color: #fff;
@@ -91,10 +82,11 @@ label{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
             0 10px 10px rgba(0,0,0,0.22);
     height:80%;
-    width: 80%;
+    width:90%;
     padding: 0px 0px;
     position: relative;
     top:8%;
+    margin: 0px 0px 0px 0px;
 }
 .left{
     border-radius: 10px 0px 0px 10px;
@@ -139,7 +131,8 @@ label{
     height:25%;
     width:100%;
     position: relative;
-    margin: 5vw 0px 5% 0px;
+    top:15%;
+    /*margin: 5vw 0px 5% 0px;*/
 }
 .bio{
 /*    float:left;
@@ -147,6 +140,8 @@ label{
     /*margin:5% 0px;*/
     color: #104a6f;
     font-weight: 600;
+    position: relative;
+    top:20%;
     font-size: 1.6vw;
     height:40%;
 }
@@ -156,18 +151,19 @@ label{
     position: relative;
     float:left;
     clear:both;
-    height:60%;
+    height:65%;
     width: 100%;
-    margin:2vw 0px 1.5vw 0px;
+    /*margin:2vw 0px 1.5vw 0px;*/
+    top:8%;
 }
 .tech>h1{
-    margin: 3vw 0px;
+    margin: 4% 0px;
     color: #C0C0C0;
     font-size: 4vw;
 }
 .techic{
     text-decoration: none;
-    font-size: 4vw;
+    font-size: 5vw;
     margin: 0.5em;
     color:#ffffff;
     transition: font-size 0.5s;
@@ -185,7 +181,7 @@ label{
     margin: 10% 0px;
     width:50%;
     position: relative;
-    left: 30%;
+    left: 33%;
 }
 .navbar-toggler{
     position:relative;
@@ -234,6 +230,10 @@ label{
     font-weight: bold;
 }
 
+
+/*.soc{
+    margin: 5px 10px;
+}*/
 #project{
     float:left;
     clear:both;
@@ -304,3 +304,301 @@ label{
     width:100%;
     margin-top:20%;
 }
+#toggle{
+    display: none;
+}
+#overlay{
+  display: none;
+}
+
+@media screen and (max-width: 600px){
+
+    li>h3{
+      color: #104a6f;
+      padding: 0px;
+      margin: 0px;
+      font-size: 4.5vw;
+      font-weight: 500;s
+    }
+    ul{
+      padding: 15px;
+      margin-bottom: 0px;
+    }
+    .right{
+        display:none;
+    }
+    .blue-box{
+        display: none;
+    }
+  .main {
+
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+              0 10px 10px rgba(0,0,0,0.22);
+      height:80%;
+      width:90%;
+      padding: 0px 0px;
+      margin: 0px 0px 0px 0px;
+  }
+    .left{
+       /* display: none;*/
+        width: 100%;
+    }
+    .bio>h1{
+        font-size: 5vw;
+    }
+
+    .bio{
+
+        font-size: 3.5vw; 
+    }
+    .heading{
+      font-size: 9vw;
+      position: absolute;
+      top:8%;
+      left: 25%;
+    }
+
+    .projinfo{
+        /*width:90%;*/
+        height:30%;
+        margin: 10% 1% 10% 1%;
+    }
+    .projinfo>h1{
+        margin: 5% 0px;
+        font-size: 2.5vw;
+    }
+    .car-img{
+        height:40%;
+        width: 30%;
+        color: #ffffff;
+        /*background: linear-gradient(to bottom, #C0C0C0, #13263f);*/
+        background-color: #ffffff;
+        margin: 0px;
+    } 
+    .car-img>img{
+        height:70%;
+        width:70%;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        left: 0px;
+    } 
+    .projinfo>p{
+        /*width:90%;*/
+        margin: 5% 0px;
+        font-size: 1.6vw;
+    }
+
+    #carouselExampleControls{
+        position: relative;
+        top: 13%;
+    }
+
+
+    #toggle{
+        display: block;
+    }
+    #overlay{
+        display: block;
+    }
+
+    #exp{
+        position: relative;
+        top:10%;
+        height:30%;
+        margin: 5%;
+        padding: 10px;
+
+    }
+    #exp>h2{
+        font-size: 5vw;
+        font-weight: 700;
+        color: #104a6f;
+    }
+
+    #interest{
+        position: relative;
+        top: 15%;
+        margin-bottom: 0px;
+
+    }
+
+
+
+
+
+    @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+    .container a {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        color: #104a6f;
+        text-decoration: none;
+        font-size: 20px;
+        overflow: hidden;
+        top: 5px;
+    }
+    .container a:after {
+        content: '';
+        position: absolute;
+        background: #104a6f;
+        height: 2px;
+        width: 0%;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 0;
+        transition: .35s ease;
+    }
+    .container a:hover:after, .container a:focus:after, .container a:active:after {
+        width: 100%;
+    }
+
+
+
+    .button_container {
+        position: absolute;
+        top: 8%;
+        right: 10%;
+        height: 27px;
+        width: 10vw;
+        cursor: pointer;
+        z-index: 100;
+        transition: opacity .25s ease;
+    }
+    .button_container:hover {
+        opacity: 0.7;
+    }
+    .button_container.active .top {
+        transform: translateY(11px) translateX(0) rotate(45deg);
+        background: #C0C0C0;
+    }
+    .button_container.active .middle {
+        opacity: 0;
+        background: #C0C0C0;
+    }
+    .button_container.active .bottom {
+        transform: translateY(-11px) translateX(0) rotate(-45deg);
+        background: #C0C0C0;
+    }
+    .button_container span {
+        background: #104a6f;
+        border: none;
+        height: 5px;
+        width: 100%;
+        border-radius: 60%;
+        border-width: 1px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .35s ease;
+        cursor: pointer;
+    }
+    .button_container span:nth-of-type(2) {
+        top: 11px;
+    }
+    .button_container span:nth-of-type(3) {
+        top: 22px;
+    }
+
+    .overlay {
+        position: fixed;
+        background: #104a6f;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .35s, visibility .35s, height .35s;
+        overflow: hidden;
+    }
+    .overlay.open {
+        opacity: .97;
+        visibility: visible;
+        height: 100%;
+    }
+    .overlay.open li {
+        animation: fadeInRight .5s ease forwards;
+        animation-delay: .35s;
+    }
+    .overlay.open li:nth-of-type(2) {
+        animation-delay: .4s;
+    }
+    .overlay.open li:nth-of-type(3) {
+        animation-delay: .45s;
+    }
+    .overlay.open li:nth-of-type(4) {
+        animation-delay: .50s;
+    }
+    .overlay nav {
+      position: relative;
+      height: 70%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 50px;
+      font-family: 'Varela Round', serif;
+      font-weight: 400;
+      text-align: center;
+    }
+    .overlay ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+        height: 100%;
+    }
+    .overlay ul li {
+        display: block;
+        height: 25%;
+        height: calc(100% / 4);
+        min-height: 50px;
+        position: relative;
+        opacity: 0;
+    }
+    .overlay ul li a {
+        display: block;
+        position: relative;
+        color: #C0C0C0;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+        width: 100%;
+    }
+    .overlay ul li a:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0%;
+        transform: translateX(-50%);
+        height: 3px;
+        background: #C0C0C0;
+        transition: .35s;
+    }
+
+    @keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            left: 20%;
+        }
+        100% {
+            opacity: 1;
+            left: 0;
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+

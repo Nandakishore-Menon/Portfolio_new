@@ -1,3 +1,13 @@
+
+var mainpage=`                <div class="profile">
+                    <img id="me" src="./img/me.jpeg">
+                </div>
+                <div class="bio">
+                    <h1>Hey! I am Nandakishore S Menon</h1><br>Software Developer<br>An Undergrad Computer Science student at IIIT Bangalore<br>
+                    <button id="contact" >Contact Me</button>
+                </div>`;
+
+
 var l_content=`<button id="back" class="ghost">Back</button>`;
 var r_content=`                <div class="tech ">
                     <h1 class="text-center">Skills</h1>
@@ -49,7 +59,7 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
                 <i class="devicon-python-plain techu"></i>
             </div>
         </div>
-    
+
     </div>
     
     <div class="carousel-item">
@@ -79,10 +89,10 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
 </div>`;
 
 var social=`<div class="tech social">
-    <a href="https://www.linkedin.com/in/nandakishore-menon-b4a021196/" target="_blank"><i class="devicon-linkedin-plain techic"></i></a>
-    <a href="https://github.com/Nandakishore-Menon" target="_blank"><i class="devicon-github-plain techic"></i></a>
-    <a href=""><i class="devicon-facebook-plain techic"></i></a>
-    <a href="https://twitter.com/Nandakishore_SM"  target="_blank"><i class="devicon-twitter-plain techic"></i></a>
+    <a href="https://www.linkedin.com/in/nandakishore-menon-b4a021196/" target="_blank"><i class="devicon-linkedin-plain techic soc"></i></a>
+    <a href="https://github.com/Nandakishore-Menon" target="_blank"><i class="devicon-github-plain techic soc"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100008917634344" target="_blank"><i class="devicon-facebook-plain techic soc"></i></a>
+    <a href="https://twitter.com/Nandakishore_SM"  target="_blank"><i class="devicon-twitter-plain techic soc"></i></a>
 </div>`;
 
 var caro_info=`<div class="projinfo text-center">            
@@ -121,90 +131,149 @@ var cont_form=`<div id="form_div"><form id="cont_form" action="https://formspree
 
 
 
+var big=function(x){
+    var right=function(){
+        $(".blue-box").html(r_content);
+        $("#about").click(function(){
 
-var right=function(){
-    $(".blue-box").html(r_content);
-    $("#about").click(function(){
-
-        $(".blue-box").animate({right: '+=50%',
-        opacity: "0.99"
-        },800);
-        left();
-        $(".blue-box").animate({opacity:"1"});
-
-    }); 
-    $("#project").click(function(){
-        $(".blue-box").animate({right: '+=50%',
-        opacity: "0.99"
-        },800);
-        project();
-        $(".blue-box").animate({opacity:"1"});
-    });
-
-};
-
-var left=function(){
-    $(".blue-box").html(exp);
-    // $(".blue-box").append(l_content);
-    $(".right").html(interest);
-    
-    $("#back").click(function(){
-
-        $(".blue-box").animate({right: '-=50%',
+            $(".blue-box").animate({right: '+=50%',
             opacity: "0.99"
-        },800);
-        right();
-        $(".blue-box").animate({opacity:"1"});
+            },800);
+            left();
+            $(".blue-box").animate({opacity:"1"});
 
-    });
-};
-
-var project=function(){
-    $(".right").html(projs);
-    $(".blue-box").html(caro_info);
-    $(".blue-box").append(l_content);
-    $('.carousel').carousel({
-        interval: 4000
-    });
-    $('.carousel').on('slid.bs.carousel', function () {
-        $('.projinfo').html($('.active > .carousel-caption').html());
-    });
-    $("#back").click(function(){
-
-        $(".blue-box").animate({right: '-=50%',
+        }); 
+        $("#project").click(function(){
+            $(".blue-box").animate({right: '+=50%',
             opacity: "0.99"
-        },800);
-        right();
-        $(".blue-box").animate({opacity:"1"});
-        $(".right").html("");
+            },800);
+            project();
+            $(".blue-box").animate({opacity:"1"});
+        });
 
-    });
-};
- 
-right();
+    };
 
-$("#contact").click(function(){
+    var left=function(){
+        $(".blue-box").html(exp);
+        // $(".blue-box").append(l_content);
+        $(".right").html(interest);
+        
+        $("#back").click(function(){
 
-        $(".blue-box").animate({right: '+=50%',
-        opacity: "0.99"
-        },800);
-        contact();
-        $(".blue-box").animate({opacity:"1"});
-        //$(".blue-box").html(l_content);
-    });
+            $(".blue-box").animate({right: '-=50%',
+                opacity: "0.99"
+            },800);
+            right();
+            $(".blue-box").animate({opacity:"1"});
 
-var contact=function(){
-    $(".right").html(cont_form);
-    //$(".blue-box").html();
-    $(".blue-box").html(cont_info);
-    $("#back").click(function(){
+        });
+    };
 
-        $(".blue-box").animate({right: '-=50%',
+    var project=function(){
+        $(".right").html(projs);
+        $(".blue-box").html(caro_info);
+        $(".blue-box").append(l_content);
+        $('.carousel').carousel({
+            interval: 4000
+        });
+        $('.carousel').on('slid.bs.carousel', function () {
+            $('.projinfo').html($('.active > .carousel-caption').html());
+        });
+        $("#back").click(function(){
+
+            $(".blue-box").animate({right: '-=50%',
+                opacity: "0.99"
+            },800);
+            right();
+            $(".blue-box").animate({opacity:"1"});
+            $(".right").html("");
+
+        });
+    };
+     
+    right();
+
+    $("#contact").click(function(){
+
+            $(".blue-box").animate({right: '+=50%',
             opacity: "0.99"
-        },800);
-        $(".blue-box").animate({opacity:"1"});
-        $(".right").html("");
-        //$(".blue-box").html(r_content);
-        right();
-    });
+            },800);
+            contact();
+            $(".blue-box").animate({opacity:"1"});
+            //$(".blue-box").html(l_content);
+        });
+
+    var contact=function(){
+        $(".right").html(cont_form);
+        //$(".blue-box").html();
+        $(".blue-box").html(cont_info);
+        $("#back").click(function(){
+
+            $(".blue-box").animate({right: '-=50%',
+                opacity: "0.99"
+            },800);
+            $(".blue-box").animate({opacity:"1"});
+            $(".right").html("");
+            //$(".blue-box").html(r_content);
+            right();
+        });
+    };
+
 };
+
+
+
+var small=function(x){
+    $('#toggle').click(function() {
+       $(this).toggleClass('active');
+       $('#overlay').toggleClass('open');
+      });
+    $('.navb').click(function() {
+        $('#toggle').toggleClass('active');
+        $('#overlay').toggleClass('open');
+      });
+
+    $('#navabout').click(function(){
+        $('.left').html(`<h1 class="heading">Interests</h1>`);
+        $('.left').append(interest);
+        $('.left').append(exp);
+        $("#back").click(function(){
+            $('.left').html(mainpage);
+        });
+    });
+    $('#navproj').click(function(){
+        $('.left').html(`<h1 class="heading">Projects</h1>`);
+        $('.left').append(projs);
+        $('.left').append(caro_info);
+        $("#back").click(function(){
+            $('.left').html(mainpage);
+        });
+    });
+
+    $("#navhome").click(function(){
+        $('.left').html(mainpage);
+    });
+
+
+
+
+};
+
+var x = window.matchMedia("(max-width: 600px)");
+var queryfunc=function(){
+    if(!x.matches){
+        big(x);
+    }
+    else{
+        small(x);
+    }
+}
+
+queryfunc();
+
+x.addListener(queryfunc);
+
+
+
+
+
