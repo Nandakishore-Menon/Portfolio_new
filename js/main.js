@@ -259,7 +259,7 @@ var small=function(){
        $('#overlay').toggleClass('open');
        $('.small_icon').toggleClass('hidden');
 
-        ham();
+        //ham();
         $('#navabout').click(function(){
             $('.left').html(`<h1 class="heading">Interests</h1>`);
             $('.left').append(interest);

@@ -329,6 +329,9 @@ label{
       padding: 15px;
       margin-bottom: 0px;
     }
+    #form_div>label{
+        font-size: 5vw;
+    }
     .right{
         display:none;
     }
@@ -359,13 +362,13 @@ label{
         height: 95%;
     }
     .bio>h1{
-        font-size: 4.3vw;
+        font-size: 5vw;
     }
 
     .bio{
-        top:18%;
+        top:17%;
         height: 35%;
-        font-size: 3.4vw; 
+        font-size: 0.8em; 
     }
     .heading{
       color: #104a6f;
@@ -423,19 +426,19 @@ label{
       width: 100%;
       float: left;
       position: relative;
-      top:5%;
+      top:15%;
       left:0px;
     }
     h1.skhead{
 
-      font-size: 6vw;
-      margin-bottom: 5%;
+      font-size: 1.5em;
+      /*margin: 10% 0px;*/
       color: #104a6f;
 
     }
     .techic{
       color: #104a6f;
-      font-size: 1.8em;
+      font-size: 1.2em;
       /*padding: 2%;*/
     }
     .techic:hover{
@@ -491,7 +494,11 @@ label{
       left: 13%;
     }
     label{
-      font-size: 2.5vw;
+      font-size: 3.5vw;
+      font-weight: 600;
+    }
+    #mail{
+        font-size: 5vw;
     }
 /*    #cont_info>span{
       position: absolute;
