@@ -1,5 +1,5 @@
 
-var mainpage=`                <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+var mainpage=`                
                 <div class="profile">
                     <img id="me" src="./img/me.jpeg">
                 </div>
@@ -27,8 +27,9 @@ var r_content=`                <div class="tech ">
                 <button id="about" class="ghost">About me</button>
                 </div>`;
 
-var skills=`                <div class="tech ">
-                    <h1 class="text-center">Skills</h1>
+var skills=`                
+                    <div class="tech ">
+                    <h1 class="skhead text-center">Skills</h1>
                     <i class="devicon-c-plain-wordmark techic"></i>
                     <i class="devicon-python-plain techic"></i>
                     <i class="devicon-java-plain techic"></i>
@@ -142,7 +143,9 @@ var cont_form=`<div id="form_div"><form id="cont_form" action="https://formspree
   <button id="sub" type="submit">Send</button>
 </form></div>`;
 
-
+var small_cont=`<div id="cont_info"><h2>Send me your message,here </h2>${cont_form}<span><br>OR THROUGH<br><span>
+${social}<span><br>OR mail me at<br><span><h3 id="mail">Nandakishore.Menon@iiitb.org</h3>
+<button id="back" class="ghost">Back</button></div>`;
 
 
 var big=function(x){
@@ -275,6 +278,15 @@ var small=function(x){
         // $("#back").click(function(){
         //     $('.left').html(mainpage);
         // });
+    });
+    $('#navcontact').click(function(){
+        $('.left').html(`<h1 class="heading">Contacts</h1>`);
+        $('.left').append(small_cont);
+        //$('.left').append(exp);
+        $("#back").click(function(){
+            $('.left').html(mainpage);
+            $('.left').append(skills);
+        });
     });
 
     $("#navhome").click(function(){

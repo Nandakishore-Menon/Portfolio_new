@@ -359,12 +359,13 @@ label{
         height: 90%;
     }
     .bio>h1{
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .bio{
-
-        font-size: 3.5vw; 
+        top:18%;
+        height: 35%;
+        font-size: 3vw; 
     }
     .heading{
       color: #104a6f;
@@ -418,16 +419,29 @@ label{
         font-weight: bold;
     }
     .tech{
-      height:20%;
+      height:19%;
       width: 100%;
+      float: left;
       position: relative;
-      top:15%;
+      top:21%;
+      left:0px;
+    }
+    h1.skhead{
+      /*float:left;*/
+      /*position: relative;*/
+      /*left:5%;*/
+      font-size: 4vw;
+      margin-bottom: 10px;
+      color: #104a6f;
+      /*top: 20%;*/
+
     }
     .techic{
       color: #104a6f;
-      font-size: 6vw;
-      padding: 2%;
+      font-size: 1.5em;
+      /*padding: 2%;*/
     }
+
     #carouselExampleControls{
         position: relative;
         top: 12%;
@@ -471,10 +485,9 @@ label{
 
 
 
-
     @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
-    .container a {
+/*    .container a {
         display: inline-block;
         position: relative;
         text-align: center;
@@ -497,13 +510,13 @@ label{
     }
     .container a:hover:after, .container a:focus:after, .container a:active:after {
         width: 100%;
-    }
+    }*/
 
 
 
     .button_container {
         position: absolute;
-        top: 8%;
+        top: 18%;
         right: 10%;
         height: 27px;
         width: 10vw;
@@ -581,7 +594,7 @@ label{
       height: 70%;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 50px;
+      font-size: 10vw;
       font-family: 'Varela Round', serif;
       font-weight: 400;
       text-align: center;
