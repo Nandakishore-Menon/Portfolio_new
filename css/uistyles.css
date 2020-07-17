@@ -356,7 +356,7 @@ label{
     .left{
        /* display: none;*/
         width: 100%;
-        height: 90%;
+        height: 95%;
     }
     .bio>h1{
         font-size: 4vw;
@@ -481,9 +481,21 @@ label{
         margin-bottom: 0px;
 
     }
-
-
-
+    #cont_info{
+      position: relative;
+      top:15%;
+    }
+    #form_div{
+      margin-top:10%; 
+      left: 13%;
+    }
+    label{
+      font-size: 2.5vw;
+    }
+/*    #cont_info>span{
+      position: absolute;
+      left: 13%;
+    }*/
 
     @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
