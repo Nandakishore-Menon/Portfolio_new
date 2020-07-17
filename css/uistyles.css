@@ -359,13 +359,13 @@ label{
         height: 95%;
     }
     .bio>h1{
-        font-size: 4vw;
+        font-size: 4.3vw;
     }
 
     .bio{
         top:18%;
         height: 35%;
-        font-size: 3vw; 
+        font-size: 3.4vw; 
     }
     .heading{
       color: #104a6f;
@@ -423,23 +423,24 @@ label{
       width: 100%;
       float: left;
       position: relative;
-      top:21%;
+      top:5%;
       left:0px;
     }
     h1.skhead{
-      /*float:left;*/
-      /*position: relative;*/
-      /*left:5%;*/
-      font-size: 4vw;
-      margin-bottom: 10px;
+
+      font-size: 6vw;
+      margin-bottom: 5%;
       color: #104a6f;
-      /*top: 20%;*/
 
     }
     .techic{
       color: #104a6f;
-      font-size: 1.5em;
+      font-size: 1.8em;
       /*padding: 2%;*/
+    }
+    .techic:hover{
+        font-size: 1.8em;
+        color:#C0C0C0; 
     }
 
     #carouselExampleControls{

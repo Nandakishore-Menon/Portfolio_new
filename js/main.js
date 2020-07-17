@@ -7,7 +7,14 @@ var mainpage=`
                     <h1>Hey! I am Nandakishore S Menon</h1><br>Software Developer<br>An Undergrad Computer Science student at IIIT Bangalore<br>
                     <button id="contact" >Contact Me</button>
                 </div>`;
-
+var smallmain=`                
+                <div class="profile">
+                    <img id="me" src="./img/me.jpeg">
+                </div>
+                <div class="bio">
+                    <h1>Hey! I am Nandakishore S Menon</h1><br>Software Developer<br>An Undergrad Computer Science student at IIIT Bangalore<br>
+                    
+                </div>`;
 
 var l_content=`<button id="back" class="ghost projback">Back</button>`;
 var r_content=`                <div class="tech ">
@@ -148,7 +155,7 @@ ${social}<span><br>OR mail me at<br><span><h3 id="mail">Nandakishore.Menon@iiitb
 <button id="back" class="ghost">Back</button></div>`;
 
 
-var big=function(x){
+var big=function(){
     $('.left').html(mainpage);
     var right=function(){
         $(".blue-box").html(r_content);
@@ -241,75 +248,82 @@ var big=function(x){
 
 
 
-var small=function(x){
-    $('.left').html(mainpage);
-    $('.left').append(skills);
+var small=function(){
+
+    ham();
+
+
+
     $('#toggle').click(function() {
        $(this).toggleClass('active');
        $('#overlay').toggleClass('open');
        $('.small_icon').toggleClass('hidden');
-      });
+
+        ham();
+        $('#navabout').click(function(){
+            $('.left').html(`<h1 class="heading">Interests</h1>`);
+            $('.left').append(interest);
+            $('.left').append(exp);
+            $("#back").click(function(){
+                ham();
+            });
+        });
+        $('#navproj').click(function(){
+            $('.left').html(`<h1 class="heading">Projects</h1>`);
+            $('.left').append(projs);
+            $('.left').append(caro_info);
+            $('.carousel').carousel({
+                interval: 4000
+            });
+            $('.carousel').on('slid.bs.carousel', function () {
+                $('.projinfo').html($('.active > .carousel-caption').html());
+            });
+
+        });
+
+        $("#navhome").click(function(){
+            ham();
+
+        });
+
+        $('#navcontact').click(function(){
+            $('.left').html(`<h1 class="heading">Contacts</h1>`);
+            $('.left').append(small_cont);
+        //$('.left').append(exp);
+        //ham();
+            $("#back").click(function(){
+            //ham();
+                ham();
+            });
+
+        });
+
+
+
+
+    });
     $('.navb').click(function() {
         $('#toggle').toggleClass('active');
         $('#overlay').toggleClass('open');
-        $('.small_icon').toggleClass('hidden');
-      });
-
-    $('#navabout').click(function(){
-        $('.left').html(`<h1 class="heading">Interests</h1>`);
-        $('.left').append(interest);
-        $('.left').append(exp);
-        $("#back").click(function(){
-            small();
-        });
-    });
-    $('#navproj').click(function(){
-        $('.left').html(`<h1 class="heading">Projects</h1>`);
-        $('.left').append(projs);
-        $('.left').append(caro_info);
-        $('.carousel').carousel({
-            interval: 4000
-        });
-        $('.carousel').on('slid.bs.carousel', function () {
-            $('.projinfo').html($('.active > .carousel-caption').html());
-        });
-
-        // $("#back").click(function(){
-        //     $('.left').html(mainpage);
-        // });
-    });
-    $('#navcontact').click(function(){
-        $('.left').html(`<h1 class="heading">Contacts</h1>`);
-        $('.left').append(small_cont);
-        //$('.left').append(exp);
-        $("#back").click(function(){
-            small();
-        });
-    });
-
-    $("#navhome").click(function(){
-        small();
-    });
-    $('#contact').click(function(){
-        $('.left').html(`<h1 class="heading">Contacts</h1>`);
-        $('.left').append(small_cont);
-        //$('.left').append(exp);
-        $("#back").click(function(){
-            small();
-        });
-    });
+        //$('.small_icon').toggleClass('hidden');
+      });    
 
 
 
 };
 
+var ham=function(){
+   $('.left').html(smallmain);
+   $('.left').append(skills);
+}
+
 var x = window.matchMedia("(max-width: 600px)");
 var queryfunc=function(){
     if(!x.matches){
-        big(x);
+        big();
     }
     else{
-        small(x);
+        small();
     }
 }
 
