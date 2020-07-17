@@ -291,8 +291,17 @@ var small=function(x){
 
     $("#navhome").click(function(){
         $('.left').html(mainpage);
+        $('.left').append(skills);
     });
-
+    $('#contact').click(function(){
+        $('.left').html(`<h1 class="heading">Contacts</h1>`);
+        $('.left').append(small_cont);
+        //$('.left').append(exp);
+        $("#back").click(function(){
+            $('.left').html(mainpage);
+            $('.left').append(skills);
+        });
+    });
 
 
 
