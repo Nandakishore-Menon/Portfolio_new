@@ -1,5 +1,6 @@
 
-var mainpage=`                <div class="profile">
+var mainpage=`                <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+                <div class="profile">
                     <img id="me" src="./img/me.jpeg">
                 </div>
                 <div class="bio">
@@ -8,7 +9,7 @@ var mainpage=`                <div class="profile">
                 </div>`;
 
 
-var l_content=`<button id="back" class="ghost">Back</button>`;
+var l_content=`<button id="back" class="ghost projback">Back</button>`;
 var r_content=`                <div class="tech ">
                     <h1 class="text-center">Skills</h1>
                     <i class="devicon-c-plain-wordmark techic"></i>
@@ -24,6 +25,19 @@ var r_content=`                <div class="tech ">
                 <div class="but">
                 <button id="project" class="ghost">My Projects</button>
                 <button id="about" class="ghost">About me</button>
+                </div>`;
+
+var skills=`                <div class="tech ">
+                    <h1 class="text-center">Skills</h1>
+                    <i class="devicon-c-plain-wordmark techic"></i>
+                    <i class="devicon-python-plain techic"></i>
+                    <i class="devicon-java-plain techic"></i>
+                    <i class="devicon-javascript-plain techic"></i>
+                    <i class="devicon-html5-plain techic"></i>
+                    <i class="devicon-css3-plain techic"></i>
+                    <i class="devicon-mongodb-plain techic"></i>
+                    <i class="devicon-nodejs-plain techic"></i>
+                    <i class="devicon-express-original techic"></i>
                 </div>`;
 
 var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -79,11 +93,11 @@ var projs=`<div id="carouselExampleControls" class="carousel slide" data-ride="c
     
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="small_icon"><i class="fa fa-chevron-circle-left"></i>
     <span class="sr-only">Previous</span>
   </a>
   <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="small_icon"><i class="fa fa-chevron-circle-right"></i></span>
     <span class="sr-only">Next</span>
   </a>
 </div>`;
@@ -132,6 +146,7 @@ var cont_form=`<div id="form_div"><form id="cont_form" action="https://formspree
 
 
 var big=function(x){
+    $('.left').html(mainpage);
     var right=function(){
         $(".blue-box").html(r_content);
         $("#about").click(function(){
@@ -224,13 +239,17 @@ var big=function(x){
 
 
 var small=function(x){
+    $('.left').html(mainpage);
+    $('.left').append(skills);
     $('#toggle').click(function() {
        $(this).toggleClass('active');
        $('#overlay').toggleClass('open');
+       $('.small_icon').toggleClass('hidden');
       });
     $('.navb').click(function() {
         $('#toggle').toggleClass('active');
         $('#overlay').toggleClass('open');
+        $('.small_icon').toggleClass('hidden');
       });
 
     $('#navabout').click(function(){
@@ -239,15 +258,23 @@ var small=function(x){
         $('.left').append(exp);
         $("#back").click(function(){
             $('.left').html(mainpage);
+            $('.left').append(skills);
         });
     });
     $('#navproj').click(function(){
         $('.left').html(`<h1 class="heading">Projects</h1>`);
         $('.left').append(projs);
         $('.left').append(caro_info);
-        $("#back").click(function(){
-            $('.left').html(mainpage);
+        $('.carousel').carousel({
+            interval: 4000
         });
+        $('.carousel').on('slid.bs.carousel', function () {
+            $('.projinfo').html($('.active > .carousel-caption').html());
+        });
+
+        // $("#back").click(function(){
+        //     $('.left').html(mainpage);
+        // });
     });
 
     $("#navhome").click(function(){

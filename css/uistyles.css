@@ -193,8 +193,9 @@ label{
     position: relative;
     top:10%;
     height:70%;
-    margin: 10% 1% 10% 1%;
+    margin: 10% 1% 5% 1%;
 }
+
 .projinfo>h1{
     /*width:90%;*/
     margin: 5% 0px;
@@ -209,11 +210,11 @@ label{
     padding: 0px;
 } 
 .car-img>img{
-    height:25vw;
-    width:25vw;
+    height:80%;
+    width:80%;
     position: relative;
     top:10%;
-    left:15%;
+    left:8%;
     padding: 0px;
 } 
 .projinfo>p{
@@ -310,6 +311,10 @@ label{
 #overlay{
   display: none;
 }
+.projback{
+  position: relative;
+  bottom: 10%;
+}
 
 @media screen and (max-width: 600px){
 
@@ -330,13 +335,20 @@ label{
     .blue-box{
         display: none;
     }
+    .small_icon{
+      display: inline;
+      color: #000000;
+    }
+    .hidden{
+      display: none;
+    }
   .main {
 
       background-color: #fff;
       border-radius: 10px;
       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
               0 10px 10px rgba(0,0,0,0.22);
-      height:80%;
+      height:85%;
       width:90%;
       padding: 0px 0px;
       margin: 0px 0px 0px 0px;
@@ -344,6 +356,7 @@ label{
     .left{
        /* display: none;*/
         width: 100%;
+        height: 90%;
     }
     .bio>h1{
         font-size: 5vw;
@@ -354,48 +367,78 @@ label{
         font-size: 3.5vw; 
     }
     .heading{
+      color: #104a6f;
       font-size: 9vw;
       position: absolute;
-      top:8%;
+      top:6%;
       left: 25%;
     }
 
     .projinfo{
         /*width:90%;*/
-        height:30%;
+        height:50%;
         margin: 10% 1% 10% 1%;
     }
     .projinfo>h1{
-        margin: 5% 0px;
-        font-size: 2.5vw;
-    }
-    .car-img{
-        height:40%;
-        width: 30%;
-        color: #ffffff;
-        /*background: linear-gradient(to bottom, #C0C0C0, #13263f);*/
-        background-color: #ffffff;
-        margin: 0px;
-    } 
-    .car-img>img{
-        height:70%;
-        width:70%;
-        margin: 0px;
-        padding: 0px;
         position: relative;
-        left: 0px;
-    } 
+        top:2%;
+        margin: 0px 0px;
+        font-size: 4vw;
+        color: #104a6f;
+
+    }
+
     .projinfo>p{
         /*width:90%;*/
-        margin: 5% 0px;
-        font-size: 1.6vw;
+        color: #104a6f;
+        position: relative;
+        top:1%;
+        margin: 10px 0px;
+        font-size: 3.5vw;
+
+    }
+    .car-img>img{
+        width: 50%;
+        height: 60%;
+        /*position: relative;*/
+        top:15%;
+        left:0px;
+        /*padding: 0px;*/
+    } 
+
+    .techu{
+        color: #104a6f;
+        font-size: 8vw;
+        padding:5px 10px;
     }
 
+    .techused>h3{
+        color: #104a6f;
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    .tech{
+      height:20%;
+      width: 100%;
+      position: relative;
+      top:15%;
+    }
+    .techic{
+      color: #104a6f;
+      font-size: 6vw;
+      padding: 2%;
+    }
     #carouselExampleControls{
         position: relative;
-        top: 13%;
+        top: 12%;
+        /*left: 15%*/
+        margin-left: 15%;
+        height: 50%;
+        width: 70%;
     }
-
+    #carouselExampleControls>span{
+      color:#000000;
+    }
 
     #toggle{
         display: block;
