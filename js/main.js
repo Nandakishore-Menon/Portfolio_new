@@ -260,8 +260,7 @@ var small=function(x){
         $('.left').append(interest);
         $('.left').append(exp);
         $("#back").click(function(){
-            $('.left').html(mainpage);
-            $('.left').append(skills);
+            small();
         });
     });
     $('#navproj').click(function(){
@@ -284,22 +283,19 @@ var small=function(x){
         $('.left').append(small_cont);
         //$('.left').append(exp);
         $("#back").click(function(){
-            $('.left').html(mainpage);
-            $('.left').append(skills);
+            small();
         });
     });
 
     $("#navhome").click(function(){
-        $('.left').html(mainpage);
-        $('.left').append(skills);
+        small();
     });
     $('#contact').click(function(){
         $('.left').html(`<h1 class="heading">Contacts</h1>`);
         $('.left').append(small_cont);
         //$('.left').append(exp);
         $("#back").click(function(){
-            $('.left').html(mainpage);
-            $('.left').append(skills);
+            small();
         });
     });
 
