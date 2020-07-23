@@ -133,8 +133,8 @@ var interest=`<div id="interest"><ul>
     <li><h3>I look forward to contributing to Open Source projects</h3></li>
 </ul></div>`;
 
-var cont_info=`<div id="cont_info"><h2>Send me your message,here </h2><span><br>OR THROUGH<br><span>
-${social}<span><br>OR mail me at<br><span><h3 id="mail">Nandakishore.Menon@iiitb.org</h3>
+var cont_info=`<div id="cont_info"><h2>Send me your message,here </h2><br><br>
+${social}<span><br>OR mail me at<br></span><h3 id="mail">Nandakishore.Menon@iiitb.org</h3>
 <button id="back" class="ghost">Back</button></div>`;
 
 var cont_form=`<div id="form_div"><form id="cont_form" action="https://formspree.io/xpzyorad" method="POST">
@@ -150,8 +150,8 @@ var cont_form=`<div id="form_div"><form id="cont_form" action="https://formspree
   <button id="sub" type="submit">Send</button>
 </form></div>`;
 
-var small_cont=`<div id="cont_info"><h2>Send me your message,here </h2>${cont_form}<br><span><br>OR THROUGH<br><span>
-${social}<span><br>OR mail me at<br><span><h3 id="mail">Nandakishore.Menon@iiitb.org</h3>
+var small_cont=`<div id="cont_info"><h2>Send me your message,here </h2>${cont_form}<br><br>
+${social}<span><br>OR mail me at<br></span><h3 id="mail">Nandakishore.Menon@iiitb.org</h3>
 <button id="back" class="ghost">Back</button></div>`;
 
 
